@@ -28,35 +28,34 @@
     </div>
   </section>
 
-  <!-- detalhe -->
-  <div class="container-fluid detail-bg"></div>
-
   <!-- o que fazemos -->
-  <section class="container text-center py-5">
-    <h2 class="display-4 display-font py-5">O que fazemos ?</h2>
-    <div class="row py-5">
-      <article class="col-sm-12 col-md-4 py-3">
-        <i class="display-4 fa fa-clipboard"></i>
-        <h3 class="py-2">Planejamento</h3>
-        <p class="px-1">
-          <?php the_field('planning_text'); ?>
-        </p>
-      </article>
-      <article class="col-sm-12 col-md-4 py-3">
-        <i class="display-4 fa fa-paint-brush"></i>
-        <h3 class="py-2">Design</h3>
-        <p class="px-1">
-          <?php the_field('design_text'); ?>
-        </p>
-      </article>
-      <article class="col-sm-12 col-md-4 py-3">
-        <i class="display-4 fa fa-code"></i>
-        <h3 class="py-2">Desenvolvimento</h3>
-        <p class="px-1">
-          <?php the_field('dev_text'); ?>
-        </p>
-      </article>
+  <section class="works-bg">
+    <div class="container text-center py-5">
+      <h2 class="display-4 display-font py-5">O que fazemos ?</h2>
+      <div class="row py-5">
+        <article class="col-sm-12 col-md-4 py-3">
+          <i class="display-4 fa fa-clipboard"></i>
+          <h3 class="py-2">Planejamento</h3>
+          <p class="px-1">
+            <?php the_field('planning_text'); ?>
+          </p>
+        </article>
+        <article class="col-sm-12 col-md-4 py-3">
+          <i class="display-4 fa fa-paint-brush"></i>
+          <h3 class="py-2">Design</h3>
+          <p class="px-1">
+            <?php the_field('design_text'); ?>
+          </p>
+        </article>
+        <article class="col-sm-12 col-md-4 py-3">
+          <i class="display-4 fa fa-code"></i>
+          <h3 class="py-2">Desenvolvimento</h3>
+          <p class="px-1">
+            <?php the_field('dev_text'); ?>
+          </p>
+        </article>
+      </div>
+      <a href="<?php echo getPageLink('projetos'); ?>" class="btn btn-lg btn-primary my-5">Ver Projetos!</a>
     </div>
-    <a href="#" class="btn btn-lg btn-primary my-5">Ver Projetos!</a>
   </section>
 <?php get_footer(); ?>

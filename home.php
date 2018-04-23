@@ -4,7 +4,7 @@
     <h1 class="display-font display-4 text-center py-5">Blog</h1>
     <div class="row">
       <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
-        <article class="col-12 p-4 my-2 post-container">
+        <article class="col-12 p-4 my-2 post-container post-item">
           <h2 class="post-title"><?php the_title(); ?></h2>
           <div class="py-2">
             <?php the_excerpt(); ?>

@@ -1,5 +1,5 @@
 # pet-project-wordpress (em produção)
-Pet Project para treinar wordpress
+site simples para treinar wordpress
 
 #### assuntos estudados:
 - Advanced custom fields
