@@ -4,7 +4,7 @@
     <div class="row">
       <?php $the_query = new WP_Query( array('post_type' => 'Projetos')); ?>
       <?php if( $the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <article class="col-sm-12 col-md-6 col-lg-5 my-2 mx-auto project-container">          
+        <article class="col-sm-12 col-md-6 col-lg-4 my-2 mx-auto project-container">          
           <img class="project-image" src="<?php the_field('project_img'); ?>" />
           <div class="project-desc text-white">
             <div>
