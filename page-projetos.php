@@ -2,6 +2,7 @@
   <section class="container py-5 mh">
     <h2 class="display-font display-4 text-center py-5">Projetos</h2>
     <div class="row">
+      <!-- loop de projetos -->
       <?php $the_query = new WP_Query( array('post_type' => 'Projetos')); ?>
       <?php if( $the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <article class="col-sm-12 col-md-6 col-lg-4 my-2 mx-auto project-container">          

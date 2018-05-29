@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- Home Page -->
   <!-- banner -->
   <section class="container-fluid">
     <div class="banner-bg row justify-content-center align-items-center">
@@ -31,10 +32,10 @@
   <section class="phrase-bg py-5">
     <div class="py-5 text-white text-center">
       <blockquote class="display-4">
-        “Bem feito é melhor que bem dito."
+        <?php the_field('phrase'); ?>
       </blockquote>
       <cite class="lead">
-        – Benjamin Franklin – 
+        - <?php the_field('author'); ?> -
       </cite>
     </div>
   </section>
@@ -69,6 +70,7 @@
       <a href="<?php echo getPageLink('projetos'); ?>" class="btn btn-lg btn-outline-primary my-5">Ver Projetos!</a>
     </div>
   </section>
+  <!-- form de contato -->
   <section class="form-bg container-fluid">
     <div class="row">
       <div class="col p-5">
@@ -76,13 +78,12 @@
         <form class="py-5 my-5" action="">
           <div class="form-group">
             <label for="email">E-mail</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="exemplo@email.com">
+            <input type="email" class="form-control" id="email" placeholder="exemplo@email.com">
             <small id="emailHelp" class="form-text text-muted">Não Mandaremos Spam ;)</small>
             </div>
             <div class="form-group">
               <label class="mt-2" for="mensagem">Mensagem</label>
-              <textarea type="password" class="form-control" id="mensagem" placeholder="Password">
-              </textarea>
+              <textarea type="password" class="form-control" id="mensagem" ></textarea>
             </div>            
             <button type="submit" class="my-5 btn btn-outline-primary">Enviar</button>
         </form>
