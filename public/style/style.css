@@ -29,12 +29,22 @@ textarea {
   font-family: 'Lobster', cursive;
 }
 
+/* linha de detalhe em baixo de alguns titulos */
+.title-detail::after {
+  content: '';
+  display: block;
+  margin: 3px auto;
+  width: 30px;
+  height: 3px;
+  background-color: #18bc9c;
+}
+
 /* sobre */
 .about-img {
   width: 100%;
   height: 100%;
-  outline: 5px solid #fff;
-  outline-offset: -10px;
+  outline: 3px solid #fff;
+  outline-offset: -14px;
 }
 
 .phrase-bg{
@@ -55,42 +65,28 @@ textarea {
 
 /* projetos item */
 .project-container {  
-  position: relative;  
-  background-color: #222;
-  padding: 0;
-  outline: 5px solid #fff;
-  outline-offset: -14px;
-  cursor: pointer;  
-}
-
-.project-container:hover .project-image {
-  opacity: .4;
-  transition: .5s;
-}
-
-.project-container:hover .project-desc {
-  opacity: 1;
-  transition: .5s;  
+  background-color: #f7f7f7;
 }
 
 .project-image {
-  width: 100%;
-  height: 350px;
+  outline: 2px solid white;
+  outline-offset: -10px;
+}
+
+.project-container:hover .project-desc {
+  
+}
+
+.project-image {
+  max-width: 350px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
 }
 
 .project-desc {  
-  display: flex;
-  align-items: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  text-align: center;
-  top: 0;
-  left: 0;
-  padding: 20px;  
+  max-width: 300px;  
 }
-
 
 /* blog */
 .post-container {

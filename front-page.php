@@ -21,7 +21,7 @@
         <img src="<?php echo THEME_PATH ?>/public/imgs/about.jpeg" class="about-img" alt="Tela de planejamento">
       </div>
       <article class="col text-center py-5">
-        <h2 class="display-4 display-font py-2"> Sobre </h2>
+        <h2 class="display-4 display-font py-2 title-detail"> Sobre </h2>
         <p class="px-lg-5 px-sm-1">
           <?php the_field('about_text'); ?>
         </p>
@@ -43,7 +43,7 @@
   <!-- o que fazemos -->
   <section class="works-bg">
     <div class="container text-center py-5">
-      <h2 class="display-4 display-font py-5">O que fazemos ?</h2>
+      <h2 class="display-4 display-font py-5 title-detail">O que fazemos ?</h2>
       <div class="row py-5">
         <article class="col-sm-12 col-md-4 py-3">
           <i class="display-4 fa fa-clipboard"></i>
@@ -74,7 +74,7 @@
   <section class="form-bg container-fluid">
     <div class="row">
       <div class="col p-5">
-          <h2 class="text-center display-font">Mande uma mensagem</h2>
+          <h2 class="text-center display-font title-detail">Mande uma mensagem</h2>
         <form class="py-5 my-5" action="">
           <div class="form-group">
             <label for="email">E-mail</label>
